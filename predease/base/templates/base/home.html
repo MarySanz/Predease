@@ -1,0 +1,410 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<style>
+    .style-0 {
+        /* margin-top: 200px; */
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        flex-direction: column;
+        /* box-sizing: border-box; */
+    }
+
+    .style-1 {
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        max-width: 352px;
+        margin-bottom: 12px;
+        padding-right: 32px;
+        box-sizing: border-box;
+    }
+
+    .style-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 100%;
+        background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
+        border-radius: 16px 16px 16px 4px;
+        opacity: 1;
+        transform-origin: 0px 60.7812px;
+        animation: 0.5s ease-in-out 0.5s 1 normal none running hGlPFV, 0s ease 0.5s 1 normal forwards running fade-in;
+        box-sizing: border-box;
+    }
+
+    .style-3 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 16px;
+        white-space: pre-wrap;
+        overflow: auto;
+        box-sizing: border-box;
+    }
+
+    .style-4 {
+        width: 90vw;
+        max-width: 710px;
+        position: relative;
+        margin-bottom: 12px;
+        scroll-margin-bottom: 12px;
+        border-radius: 16px;
+        box-sizing: border-box;
+    }
+
+    .style-5 {
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        transition: margin-right 0.6s cubic-bezier(0.7, 0.3, 0.1, 1) 0s;
+        box-sizing: border-box;
+    }
+
+    .style-6 {
+        display: flex;
+        position: relative;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        min-height: 56px;
+        max-width: 752px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(227, 227, 227);
+        border-radius: 16px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px 0px;
+        background-color: rgb(255, 255, 255);
+        padding: 0px 12px 0px 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .style-7 {
+        height: 48px !important;
+        margin: 0px;
+        padding: 12px;
+        border: 0px none rgb(21, 21, 21);
+        color: rgb(21, 21, 21);
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        resize: none;
+        background-color: rgba(0, 0, 0, 0);
+        overflow-y: hidden;
+        line-height: 24px;
+        overflow: auto;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 16px;
+        touch-action: manipulation;
+        box-sizing: border-box;
+    }
+
+    .style-8 {
+        color: rgb(0, 0, 0);
+        font: 16px / 18.4px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-palette: normal;
+        font-synthesis: weight style small-caps;
+        forced-color-adjust: auto;
+        text-orientation: mixed;
+        text-rendering: optimizelegibility;
+        -webkit-font-smoothing: antialiased;
+        -webkit-locale: 'en-US';
+        -webkit-text-orientation: vertical-right;
+        -webkit-writing-mode: horizontal-tb;
+        writing-mode: horizontal-tb;
+        zoom: 1;
+        accent-color: auto;
+        place-content: normal;
+        place-items: normal;
+        align-self: flex-end;
+        alignment-baseline: auto;
+        animation-composition: replace;
+        animation: none 0s ease 0s 1 normal none running;
+        app-region: none;
+        appearance: none;
+        aspect-ratio: auto;
+        backdrop-filter: none;
+        backface-visibility: visible;
+        background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+        background-blend-mode: normal;
+        baseline-shift: 0px;
+        baseline-source: auto;
+        block-size: 24px;
+        border-block: 0px none rgb(0, 0, 0);
+        border: 0px none rgb(0, 0, 0);
+        border-radius: 0px;
+        border-collapse: separate;
+        border-end-end-radius: 0px;
+        border-end-start-radius: 0px;
+        border-inline: 0px none rgb(0, 0, 0);
+        border-start-end-radius: 0px;
+        border-start-start-radius: 0px;
+        inset: auto;
+        box-shadow: none;
+        box-sizing: content-box;
+        break-after: auto;
+        break-before: auto;
+        break-inside: auto;
+        buffered-rendering: auto;
+        caption-side: top;
+        caret-color: rgb(0, 0, 0);
+        clear: none;
+        clip: auto;
+        clip-path: none;
+        clip-rule: nonzero;
+        color-interpolation: srgb;
+        color-interpolation-filters: linearrgb;
+        color-rendering: auto;
+        color-scheme: normal;
+        columns: auto auto;
+        column-fill: balance;
+        gap: normal;
+        column-rule: 0px none rgb(0, 0, 0);
+        column-span: none;
+        contain: none;
+        contain-intrinsic-block-size: none;
+        contain-intrinsic-size: none;
+        contain-intrinsic-inline-size: none;
+        container: none;
+        content: normal;
+        content-visibility: visible;
+        counter-increment: none;
+        counter-reset: none;
+        counter-set: none;
+        cursor: auto;
+        cx: 0px;
+        cy: 0px;
+        d: none;
+        display: block;
+        dominant-baseline: auto;
+        empty-cells: show;
+        fill: rgb(0, 0, 0);
+        fill-opacity: 1;
+        fill-rule: nonzero;
+        filter: none;
+        flex: 0 1 auto;
+        flex-flow: row nowrap;
+        float: none;
+        flood-color: rgb(0, 0, 0);
+        flood-opacity: 1;
+        grid: none / none / none / row / auto / auto;
+        grid-area: auto / auto / auto / auto;
+        height: 24px;
+        hyphenate-character: auto;
+        hyphenate-limit-chars: auto;
+        hyphens: manual;
+        image-orientation: from-image;
+        image-rendering: auto;
+        initial-letter: normal;
+        inline-size: 24px;
+        inset-block: auto;
+        inset-inline: auto;
+        isolation: auto;
+        justify-self: auto;
+        letter-spacing: normal;
+        lighting-color: rgb(255, 255, 255);
+        line-break: auto;
+        list-style: outside none disc;
+        margin-block: 0px 16px;
+        margin-bottom: 16px;
+        margin-inline: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        marker: none;
+        mask: none;
+        mask-type: luminance;
+        math-depth: 0;
+        math-shift: normal;
+        math-style: normal;
+        max-block-size: 24px;
+        max-height: 24px;
+        max-inline-size: 24px;
+        max-width: 24px;
+        min-block-size: auto;
+        min-height: auto;
+        min-inline-size: auto;
+        min-width: auto;
+        mix-blend-mode: normal;
+        object-fit: fill;
+        object-position: 50% 50%;
+        object-view-box: none;
+        offset: none 0px auto 0deg;
+        opacity: 1;
+        order: 0;
+        orphans: 2;
+        outline: rgb(0, 0, 0) none 0px;
+        outline-offset: 0px;
+        overflow-anchor: auto;
+        overflow-clip-margin: 0px;
+        overflow-wrap: normal;
+        overflow: hidden;
+        overlay: none;
+        overscroll-behavior-block: auto;
+        overscroll-behavior-inline: auto;
+        overscroll-behavior: auto;
+        padding-block: 0px;
+        padding: 0px;
+        padding-inline: 0px;
+        page: auto;
+        page-orientation: unset;
+        paint-order: normal;
+        perspective: none;
+        perspective-origin: 12px 12px;
+        pointer-events: auto;
+        position: static;
+        quotes: auto;
+        r: 0px;
+        resize: none;
+        rotate: none;
+        ruby-position: over;
+        rx: auto;
+        ry: auto;
+        scale: none;
+        scroll-behavior: auto;
+        scroll-margin-block: 0px;
+        scroll-margin: 0px;
+        scroll-margin-inline: 0px;
+        scroll-padding-block: auto;
+        scroll-padding: auto;
+        scroll-padding-inline: auto;
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
+        scroll-snap-type: none;
+        scroll-timeline: none;
+        scrollbar-gutter: auto;
+        shape-image-threshold: 0;
+        shape-margin: 0px;
+        shape-outside: none;
+        shape-rendering: auto;
+        size: unset;
+        speak: normal;
+        stop-color: rgb(0, 0, 0);
+        stop-opacity: 1;
+        stroke: none;
+        stroke-dasharray: none;
+        stroke-dashoffset: 0px;
+        stroke-linecap: butt;
+        stroke-linejoin: miter;
+        stroke-miterlimit: 4;
+        stroke-opacity: 1;
+        stroke-width: 1px;
+        tab-size: 8;
+        table-layout: auto;
+        text-align: start;
+        text-align-last: auto;
+        text-anchor: start;
+        text-combine-upright: none;
+        text-decoration: none solid rgb(0, 0, 0);
+        text-decoration-skip-ink: auto;
+        text-emphasis: none rgb(0, 0, 0);
+        text-emphasis-position: over;
+        text-indent: 0px;
+        text-overflow: clip;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        text-transform: none;
+        text-underline-offset: auto;
+        text-underline-position: auto;
+        white-space: normal;
+        timeline-scope: none;
+        touch-action: auto;
+        transform: none;
+        transform-box: view-box;
+        transform-origin: 12px 12px;
+        transform-style: flat;
+        transition: all 0s ease 0s;
+        translate: none;
+        user-select: auto;
+        vector-effect: none;
+        vertical-align: baseline;
+        view-timeline: none;
+        view-transition-name: none;
+        visibility: visible;
+        border-spacing: 0px 0px;
+        -webkit-box-align: stretch;
+        -webkit-box-decoration-break: slice;
+        -webkit-box-direction: normal;
+        -webkit-box-flex: 0;
+        -webkit-box-ordinal-group: 1;
+        -webkit-box-orient: horizontal;
+        -webkit-box-pack: start;
+        -webkit-box-reflect: none;
+        -webkit-line-break: auto;
+        -webkit-line-clamp: none;
+        -webkit-mask-box-image: none;
+        -webkit-mask: unset;
+        -webkit-mask-composite: source-over;
+        -webkit-print-color-adjust: economy;
+        -webkit-rtl-ordering: logical;
+        -webkit-ruby-position: before;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-text-combine: none;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-fill-color: rgb(0, 0, 0);
+        -webkit-text-security: none;
+        -webkit-text-stroke: unset;
+        -webkit-user-drag: auto;
+        -webkit-user-modify: read-only;
+        widows: 2;
+        width: 1.5rem;
+        will-change: auto;
+        word-break: normal;
+        word-spacing: 0px;
+        x: 0px;
+        y: 0px;
+        z-index: auto;
+        justify-content: normal;
+        align-items: normal;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0px 0px 16px;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        line-height: 18.4px;
+    }
+
+    .style-9 {
+        box-sizing: border-box;
+    }
+
+    
+</style>
+<div class="style-0">
+    <div class="style-1">
+        <h5>,</h5>
+
+        <div class="style-2">
+
+            <div class="style-3">We are the assisstants to predict your disease</div>
+        </div>
+    </div>
+    <h1>Predease</h1>
+    <h5>we predict the disease from your symptoms </h5>
+    <div class="style-4">
+        <div class="style-5">
+            <form class="style-6"><textarea data-testid="qb_input" name='q' placeholder="Your Symptoms..."
+                    spellcheck="false" autocomplete="false" maxlength="4000" class="style-7"></textarea><button
+                    class="style-8" data-testid="qb_submit_button">
+                    <div class="style-9"><svg fill="none" width="1.5rem" height="1.5rem" viewBox="0 0 26 26"
+                            xmlns="http://www.w3.org/2000/svg" class="style-10">
+                            <rect width="26" height="26" rx="13" fill="#797979" class="style-11"></rect>
+                            <path d="M13 18.999L13 6.99893M13 6.99893L8.5 11.499M13 6.99893L17.5 11.499"
+                                stroke="#F8F8F8" stroke-width="2.25001" stroke-linecap="round" stroke-linejoin="round"
+                                class="style-12"></path>
+                        </svg></div>
+                </button></form>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+{% endblock %}
